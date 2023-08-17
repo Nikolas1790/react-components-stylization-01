@@ -1,8 +1,8 @@
-import paintings from '../data/user.json'
 
 
-
-export const Card = ({tag, username, location, avatar, stats:{followers,views,likes} }) => {
+export const Card = (props) => {
+  const {tag, username, location, avatar, stats:{followers,views,likes} } = props;
+  
     return(
         <div>
             <div class="profile">
@@ -35,3 +35,6 @@ export const Card = ({tag, username, location, avatar, stats:{followers,views,li
         </div>
     )
 }
+
+
+

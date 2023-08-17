@@ -1,39 +1,33 @@
-import { Statistics } from "Statistics/Statistics";
-import { Card } from "./Card/Card";
+import { Card } from "./Card/Card"
 import user from './data/user.json'
+import { Statistics } from "Statistics/Statistics"
 import data from './data/data.json'
+import { FriendList } from "./FriendList/FriendList"
 import friends from './data/friends.json'
-import { FriendList } from "./FriendList/FriendList";
-// import { FriendListItem } from "./FriendListItem/FriendListItem";
-// import PropTypes from 'prop-types';
+import {TransactionHistory} from './TransactionHistory/TransactionHistory.jsx'
 import transactions from './data/transactions.json'
-import TransactionHistory from './TransactionHistory/TransactionHistory.JSX'
+
 
 
 export const App = () => {
 
   return (
-    <div>
-      <Card
+    <div>      
+      <Card      
       username={user.username}
       tag={user.tag}
       location={user.location}
       avatar={user.avatar}
       stats={user.stats}/>          
         
-        <Statistics
+      <Statistics
          title="Upload stats" 
-         stats={data}     
-         
-         />        
-      
+         stats={data}              
+      />              
    
       <FriendList friends={friends} />
 
-      {/* <TransactionHistory items={transactions} /> */}
-
-
-        
+      <TransactionHistory items={transactions} />
     </div>   
 
   );

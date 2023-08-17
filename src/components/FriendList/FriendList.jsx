@@ -1,13 +1,12 @@
 import { FriendListItem } from "components/FriendListItem/FriendListItem"
-import friends from '../data/friends.json'
+// import friends from '../data/friends.json'
 
-export const FriendList = () => {
+export const FriendList = ({friends}) => {
     return (
-        <div>
+        
 <ul class="friend-list">
 
-    {friends.map(friend =>{
-        
+    {friends.map(friend =>{        
 
         <FriendListItem 
         avatar={friend.avatar} 
@@ -17,7 +16,7 @@ export const FriendList = () => {
       
        })}
        </ul>
-       </div>
+       
        )
 }
 

@@ -8,9 +8,7 @@ import {TransactionHistory} from './TransactionHistory/TransactionHistory.jsx'
 import transactions from './data/transactions.json'
 
 
-
 export const App = () => {
-
   return (
     <div>      
       <Card      
@@ -29,7 +27,6 @@ export const App = () => {
 
       <TransactionHistory items={transactions} />
     </div>   
-
   );
 };
 

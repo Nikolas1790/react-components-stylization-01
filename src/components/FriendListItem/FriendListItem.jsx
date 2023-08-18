@@ -6,7 +6,6 @@ export const FriendListItem = (props) => {
   <img className="avatar" src={props.avatar} alt="User avatar" width="48" />
   <p className="name">{props.name}</p>
 </li>       
-
     )
 }
 

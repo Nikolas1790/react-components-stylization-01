@@ -1,39 +1,37 @@
 import PropTypes from 'prop-types';
-
+import { CardDate, CardTagAndLocation, Description, Img, List, Nane, ReitingLabel, ReitingNumbers, Status } from './Card.styled';
 export const Card = (props) => {
   const {tag, username, location, avatar, stats:{followers,views,likes} } = props;
   
-    return(
-        <div>
-            <div className="profile">
-  <div className="description">
-    <img
+    return(        
+            <List className="profile" >
+  <Description className="description">
+    <Img
       src={avatar}
       alt="User avatar"
-      className="avatar"
+      className="avatar" 
     />
-    <p className="name">{username}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
-  </div>
+    <Nane className="name">{username}</Nane>
+    <CardTagAndLocation className="tag">@{tag}</CardTagAndLocation>
+    <CardTagAndLocation className="location">{location}</CardTagAndLocation>
+  </Description>
 
-  <ul className="stats">
-    <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{followers}</span>
-    </li>
-    <li>
-      <span className="label">Views</span>
-      <span className="quantity">{views}</span>
-    </li>
-    <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{likes}</span>
-    </li>
-  </ul>
-</div>
-        </div>
-    )
+  <Status className="stats">
+    <CardDate>
+      <ReitingLabel className="label">Followers</ReitingLabel>
+      <ReitingNumbers className="quantity">{followers}</ReitingNumbers>
+    </CardDate>
+    <CardDate>
+      <ReitingLabel className="label">Views</ReitingLabel>
+      <ReitingNumbers className="quantity">{views}</ReitingNumbers>
+    </CardDate>
+    <CardDate>
+      <ReitingLabel className="label">Likes</ReitingLabel>
+      <ReitingNumbers className="quantity">{likes}</ReitingNumbers>
+    </CardDate>
+  </Status>
+</List>
+       )
 }
 
 

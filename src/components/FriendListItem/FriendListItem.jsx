@@ -1,11 +1,14 @@
-export const FriendListItem = (props) => {
-     
+import { Avatar, Item, Name, Status } from "components/FriendList/FriendList.styled"
+
+export const FriendListItem = ({isOnline, avatar, name}) => {
+ 
+
     return (        
-        <li className="item" >
-  <span className="status">{props.isOnline}</span>
-  <img className="avatar" src={props.avatar} alt="User avatar" width="48" />
-  <p className="name">{props.name}</p>
-</li>       
+        <Item className="item" >
+  <Status className={isOnline} ></Status>
+  <Avatar className="avatar" src={avatar} alt="User avatar" width="48" />
+  <Name className="name">{name}</Name>
+</Item>       
     )
 }
 

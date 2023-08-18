@@ -1,7 +1,7 @@
 import { Header, StringMoney, Table } from "./TransactionHistory.styled"
 import PropTypes from 'prop-types'
 export const TransactionHistory = ({ items }) => {
-  return <Table className="transaction-history">
+  return <Table >
   <thead>
     <Header>
       <th>Type</th>

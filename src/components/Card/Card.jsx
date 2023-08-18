@@ -4,30 +4,29 @@ export const Card = (props) => {
   const {tag, username, location, avatar, stats:{followers,views,likes} } = props;
   
     return(        
-            <List className="profile" >
-  <Description className="description">
+            <List  >
+  <Description >
     <Img
       src={avatar}
       alt="User avatar"
-      className="avatar" 
-    />
-    <Nane className="name">{username}</Nane>
-    <CardTagAndLocation className="tag">@{tag}</CardTagAndLocation>
-    <CardTagAndLocation className="location">{location}</CardTagAndLocation>
+      />
+    <Nane >{username}</Nane>
+    <CardTagAndLocation >@{tag}</CardTagAndLocation>
+    <CardTagAndLocation >{location}</CardTagAndLocation>
   </Description>
 
-  <Status className="stats">
+  <Status >
     <CardDate>
-      <ReitingLabel className="label">Followers</ReitingLabel>
-      <ReitingNumbers className="quantity">{followers}</ReitingNumbers>
+      <ReitingLabel >Followers</ReitingLabel>
+      <ReitingNumbers >{followers}</ReitingNumbers>
     </CardDate>
     <CardDate>
-      <ReitingLabel className="label">Views</ReitingLabel>
-      <ReitingNumbers className="quantity">{views}</ReitingNumbers>
+      <ReitingLabel >Views</ReitingLabel>
+      <ReitingNumbers >{views}</ReitingNumbers>
     </CardDate>
     <CardDate>
-      <ReitingLabel className="label">Likes</ReitingLabel>
-      <ReitingNumbers className="quantity">{likes}</ReitingNumbers>
+      <ReitingLabel >Likes</ReitingLabel>
+      <ReitingNumbers >{likes}</ReitingNumbers>
     </CardDate>
   </Status>
 </List>

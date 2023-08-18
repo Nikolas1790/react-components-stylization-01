@@ -3,14 +3,14 @@ import { Item, SpanLabel, SpanPercentagel, StatList, StatisticList, Title } from
 
 export const Statistics = ({ title, stats }) => {  
    return (
-  <StatisticList className="statistics">
-  <Title className="title">{title}</Title>
+  <StatisticList >
+  <Title >{title}</Title>
 
     <StatList className="stat-list">
         {stats.map(stat => (
-        <Item className="item" key={stat.id}>
-      <SpanLabel className="label">{stat.label}</SpanLabel>
-      <SpanPercentagel className="percentage"> { stat.percentage}%</SpanPercentagel>
+        <Item  key={stat.id}>
+      <SpanLabel >{stat.label}</SpanLabel>
+      <SpanPercentagel > { stat.percentage}%</SpanPercentagel>
     </Item>
     ))}
     </StatList>

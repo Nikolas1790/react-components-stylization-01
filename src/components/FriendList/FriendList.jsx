@@ -4,7 +4,7 @@ import { Stat } from "./FriendList.styled";
 
 export const FriendList = ({friends}) => {    
     return (        
-   <Stat className="friend-list">
+   <Stat >
     {friends.map(friend =>       
 
         <FriendListItem 

@@ -19,6 +19,7 @@ export const TransactionHistory = ({ items }) => {
     </StringMoney>
     )}</tbody>
 </Table>    
+
 }
 
 

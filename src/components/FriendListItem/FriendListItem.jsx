@@ -1,5 +1,5 @@
 import { Avatar, Item, Name, Status } from "components/FriendList/FriendList.styled"
-
+import PropTypes from 'prop-types';
 export const FriendListItem = ({isOnline, avatar, name}) => {
  
 
@@ -12,3 +12,11 @@ export const FriendListItem = ({isOnline, avatar, name}) => {
     )
 }
 
+FriendListItem.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+   
+  }).isRequired)};

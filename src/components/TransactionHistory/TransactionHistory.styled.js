@@ -1,6 +1,6 @@
 import  styled  from "styled-components";
 
-function getThueCollors(index) {
+function getTwoCollors(index) {
        if(index % 2){        
         return `rgb(231, 234, 233)`;
     }
@@ -25,7 +25,7 @@ border: 1px solid rgb(171, 163, 163);
 `
 
 export const StringMoney = styled.tr`
-background-color: ${({index}) => getThueCollors(index)}
+background-color: ${({index}) => getTwoCollors(index)}
 // :nth-of-type(even) {
 //     background: #E8E6D1;
 //   }

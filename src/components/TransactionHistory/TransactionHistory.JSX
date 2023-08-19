@@ -1,21 +1,21 @@
-import { Header, StringMoney, Table } from "./TransactionHistory.styled"
+import {  HeadString, Header, Item, StringMoney, Table } from "./TransactionHistory.styled"
 import PropTypes from 'prop-types'
 export const TransactionHistory = ({ items }) => {
   return <Table >
   <thead>
     <Header>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <HeadString>Type</HeadString>
+      <HeadString>Amount</HeadString>
+      <HeadString>Currency</HeadString>
     </Header>
   </thead>
 
   <tbody>
     {items.map(item =>
     <StringMoney key={item.id}>
-      <td>{item.type}</td>
-      <td>{item.amount}</td>
-      <td>{item.currency}</td>
+      <Item>{item.type}</Item>
+      <Item>{item.amount}</Item>
+      <Item>{item.currency}</Item>
     </StringMoney>
     )}</tbody>
 </Table>    

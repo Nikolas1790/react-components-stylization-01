@@ -1,5 +1,7 @@
 import  styled  from "styled-components";
-
+function getRandomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
+  }
 export const StatisticList = styled.section`
 max-width: 300px;
 border-radius: 4px;
@@ -34,4 +36,5 @@ export const Item = styled.li`
 padding: 4px;
 text-align: center;
 border: 1.5px solid rgb(171, 163, 163);
+background-color: ${getRandomHexColor};
 `

@@ -25,5 +25,4 @@ background-color: rgb(172, 172, 249);
 `
 export const Item = styled.td`
 padding:16px;
-
 `

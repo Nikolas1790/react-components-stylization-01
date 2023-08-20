@@ -27,10 +27,8 @@ color: gray;
 
 
 export const Description = styled.div`
-
 padding: 40px;
 background-color:antiquewhite;
-
 `
 
 export const Status = styled.ul`

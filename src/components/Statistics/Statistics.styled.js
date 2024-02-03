@@ -6,7 +6,6 @@ export const StatisticList = styled.section`
 max-width: 300px;
 border-radius: 4px;
 background-color: rgb(122, 98, 98);
-
 `
 export const Title = styled.h2`
 font-size: 20px;

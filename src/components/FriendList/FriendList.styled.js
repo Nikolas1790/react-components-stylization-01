@@ -10,7 +10,6 @@ max-width: 300px;
 border-radius: 4px;
 padding:0;
 `
-
 export const Item = styled.li`
 display: flex;
 background-color: antiquewhite;
@@ -27,14 +26,10 @@ height: 20px;
 border-radius: 50%;
 margin:  auto 0;
 `
-
-
 export const Avatar = styled.img`
 margin: 0 8px;
 `
 export const Name = styled.p`
-
 font-weight: 700;
 line-height: 1.29;
-
 `

@@ -34,8 +34,6 @@ background-color:antiquewhite;
 export const Status = styled.ul`
 list-style: none;
 display: flex;
-align-item: center;
-justify-content: center;
 
 margin: 0;
 padding: 1px;
@@ -43,24 +41,19 @@ background-color:rgb(224, 218, 218);
 `
 export const CardDate = styled.li`
 width: 100px;
-// max-width: calc((100%-0px) / 3);
 border: 1.5px solid rgb(171, 163, 163);
 padding: 16px;
 `
 export const ReitingLabel = styled.span`
 display: flex;
-align-item: center;
 justify-content: center;
-
 font-size: 14px;
 padding: 10px;
 color: gray;
-
 `
-
 export const ReitingNumbers = styled.span`
 display: flex;
-align-item: center;
+align-items: center;
 justify-content: center;
 font-weight: 500;
 `
